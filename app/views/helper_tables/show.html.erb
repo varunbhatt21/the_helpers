@@ -1,0 +1,31 @@
+
+
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="subjects show">
+  <h2>Show Profession Details</h2>
+
+  <table summary="Subject detail view">
+    <tr>
+      <th>Name</th>
+      <td><%= @helpertable.name %></td>
+    </tr>
+    <tr>
+      <th>Position</th>
+      <td><%= @helpertable.position %></td>
+    </tr>
+    <tr>
+      <th>Worker</th>
+      <td><%= @helpertable.helper_lists.size %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td><%= @helpertable.created_at %></td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= @helpertable.updated_at %></td>
+    </tr>
+  </table>
+
+</div>

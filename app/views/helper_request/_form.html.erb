@@ -1,0 +1,26 @@
+<%= error_messages_for(@helperrequest) %>
+
+<table summary="Subject form fields">
+
+  <div class="form-group"
+     <tr>
+       <th><%= f.label(:name, "Name") %></th>
+       <td><%= f.text_field(:name) %></td>
+     </tr>
+  </div>
+  
+<div class="form-group">
+  <tr>
+    <th><%= f.label(:helper, "Helper") %></th>
+    <td><%= f.select(:helper, ['Electrician','Plumber','Carpentry']) %></td>
+  </tr>
+</div>
+
+<div class="form-group">
+   <tr>
+     <th><%= f.label(:mobile, "Mobile No.") %></th>
+     <td><%= f.text_field(:mobile) %></td>
+   </tr>
+</div>
+
+</table>

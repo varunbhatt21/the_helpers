@@ -1,0 +1,17 @@
+<%= link_to("<< Back to List", {:action => 'index' , :helper_table_id => @helpertable.id}, :class => 'back-link') %>
+
+<div class="pages delete">
+  <h2>Delete Entry</h2>
+
+  <%= form_for(:helperlist, :url => {:action => 'destroy', :id => @helperlist.id , :helper_table_id => @helpertable.id}) do |f| %>
+
+    <p>Are you sure you want to permanently delete this entry?</p>
+
+    <p class="reference-name"> <%= @helperlist.first_name %> <%= @helperlist.last_name %></p>
+
+    <div class="form-buttons">
+      <%= submit_tag("Delete Page") %>
+    </div>
+
+  <% end %>
+</div>

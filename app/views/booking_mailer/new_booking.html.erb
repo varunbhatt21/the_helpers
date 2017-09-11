@@ -1,0 +1,16 @@
+<p>Thankyou for booking</p>
+
+<p>We will contact you shortly </p>
+
+<div class="container">
+  <div class="jumbotron">
+    <h3>Booking Details</h3>
+
+    <p>Name &nbsp; : &nbsp; &nbsp; <%= @booking.name %> </p>
+    <p>Helper &nbsp; : &nbsp; &nbsp; <%= @booking.helper %> </p>
+    <p>Address &nbsp; :  <%= @booking.address %> </p>
+    <p>Request Date &nbsp; :  <%= @booking.created_at %> between <%= @booking.time %> </p>
+    <p>Mobile &nbsp; :  <%= @booking.mobile %> </p>
+
+  </div>
+</div>

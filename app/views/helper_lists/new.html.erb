@@ -1,0 +1,15 @@
+<%= link_to("<< Back to List", {:action => 'index' , :helper_table_id => @helpertable.id}, :class => 'back-link') %>
+
+<div class="pages new">
+  <h2>Create List</h2>
+
+  <%= form_for(:helperlist, :url => {:action => 'create' , :helper_table_id => @helpertable.id}) do |f| %>
+
+    <%= render(:partial => "form", :locals => {:f =>f}) %>
+
+    <div class="form-buttons">
+      <%= submit_tag("Create Entry") %>
+    </div>
+
+  <% end %>
+</div>

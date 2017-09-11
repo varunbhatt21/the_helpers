@@ -1,0 +1,61 @@
+<!-- http://www.the-art-of-web.com/html/html5-form-validation/  -->
+
+<%= error_messages_for(@helperreq) %>
+
+<table summary="Subject form fields" >
+
+
+  <div class="form-group"
+     <tr>
+       <th><%= f.label(:name, "Name") %></th>
+       <td><%= f.text_field :name ,maxlength: 25,minlength: 5,placeholder: "MAX 25 characters ",onchange:"this.setCustomValidity(validity.valueMissing ? 'Please enter your Name' : '');" %></td>
+     </tr>
+  </div>
+
+  <div class="form-group">
+  <tr>
+    <th><%= f.label(:service, "Helper") %></th>
+    <td><%= f.select :service, ['Electrician','Plumber','Carpentry'] , { :include_blank => '-- Select One --' }, :required => true  %></td>
+  </tr>
+  </div>
+
+  <div class="form-group">
+   <tr>
+     <th><%= f.label(:mobile, "Mobile No.") %></th>
+     <td><%= f.text_field :mobile ,maxlength: 20,minlength: 10,onchange: "this.setCustomValidity(validity.valueMissing ? 'Please enter a valid Mobile No.' : '');" %></td>
+   </tr>
+  </div>
+
+
+<div class="form-group"
+   <tr>
+     <th><%= f.label(:address,"Address") %></th>
+     <td><%= f.text_field :address ,maxlength:50 ,minlength: 10,placeholder: "Max 50 characters" , onchange: "this.setCustomValidity(validity.valueMissing ? 'Please enter a valid Address' : '');" %></td>
+   </tr>
+</div>
+
+
+ <div class="form-group"
+   <tr>
+     <th><%= f.label(:email,"E-mail") %></th>
+     <td><%= f.text_field :email , type:'email', required: true, placeholder: "Enter a valid email address"  %></td>
+   </tr>
+ </div>
+
+<div class="form-group"
+   <tr>
+     <th><%= f.label(:date, "Preferred Date") %></th>
+     <td><%= f.date_select :date, :order => [:month, :day, :year], :required => true %> </th>
+   </tr>
+</div>
+
+
+ <div class="form-group">
+   <tr>
+     <th><%= f.label(:time, "Preferred Time") %></th>
+     <td><%= f.select :time, ['9am - 12pm','12pm - 3pm','3pm - 6pm'] , { :include_blank => '-- Select One --' }, :required => true %></td>
+   </tr>
+ </div>
+
+
+</table>

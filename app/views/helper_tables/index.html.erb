@@ -1,0 +1,32 @@
+<% @page_title = "Profession" %>
+
+<%= link_to("<< Back to Menu", {:controller => 'access', :action => 'index'}, :class => 'back-link') %>
+
+<div class="subjects index">
+  <h2>Profession</h2>
+
+  <%= link_to( image_tag('plus_sign.png', :size => '11x11', :alt => '+') + "Add New Profession", {:action => 'new'}, :class => 'action new') %>
+  <div> <%= pluralize(@helpertables.size, "entry") %> found </div>
+  <table class="listing" summary="Subject list">
+    <tr class="header">
+      <th>&nbsp;</th>
+      <th>Profession</th>
+      <th>Counter</th>
+      <th>Actions</th>
+    </tr>
+    <% @helpertables.each do |helpertable| %>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td><%= helpertable.position %></td>
+      <td><%= helpertable.name %></td>
+
+      <td class="center"><%= helpertable.helper_lists.size %></td>
+      <td class="actions">
+        <%= link_to("View List" ,{:controller => 'helper_lists' , :helper_table_id => helpertable.id }, :class => 'action show') %>
+        <%= link_to("Show", {:action => 'show', :id => helpertable.id}, :class => 'action show') %>
+        <%= link_to("Edit", {:action => 'edit' , :id => helpertable.id}, :class => 'action edit') %>
+        <%= link_to("Delete", {:action => 'delete' , :id => helpertable.id} , :class => 'action delete') %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>

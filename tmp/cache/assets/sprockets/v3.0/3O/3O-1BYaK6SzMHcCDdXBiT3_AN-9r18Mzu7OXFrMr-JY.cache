@@ -1,0 +1,8 @@
+I"l(function() {
+  $('#policy').modal({
+    backdrop: 'static',
+    keyboard: false
+  });
+
+}).call(this);
+:ET

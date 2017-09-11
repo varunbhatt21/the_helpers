@@ -1,0 +1,28 @@
+<%= error_messages_for(@helperlist) %>
+
+<table summary="Page form fields">
+  <tr>
+    <th><%= f.label(:helper_table_id, "Profession") %></th>
+    <td><%= f.select(:helper_table_id, @helpertables.map {|s| [s.name, s.id]}) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:name, "First Name") %></th>
+    <td><%= f.text_field(:first_name) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:name, "Last Name") %></th>
+    <td><%= f.text_field(:last_name) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:position) %></th>
+    <td><%= f.select(:position, 1..@helperlist_count) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:rating, "Rating") %></th>
+    <td><%= f.select(:rating, 0..5) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:created_at) %></th>
+    <td><%= f.datetime_select(:created_at, :order => [:month, :day, :year]) %></th>
+ </tr>
+</table>

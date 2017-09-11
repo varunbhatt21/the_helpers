@@ -1,0 +1,17 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="subjects delete">
+  <h2>Delete Profession</h2>
+
+  <%= form_for(:helpertable, :url => {:action => 'destroy', :id => @helpertable.id}) do |f| %>
+
+    <p>Are you sure you want to permanently delete this subject?</p>
+
+    <p class="reference-name"><%= @helpertable.name %></p>
+
+    <div class="form-buttons">
+      <%= submit_tag("Delete Profession") %>
+    </div>
+
+  <% end %>
+</div>
