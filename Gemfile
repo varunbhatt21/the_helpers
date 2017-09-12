@@ -6,9 +6,11 @@ git_source(:github) do |repo_name|
 end
 
 group :production do
-  gem 'pg'
+
   gem 'rails_12factor'
 end
+
+gem 'pg'
 
 group :development do
   gem 'mysql2', '>= 0.3.18', '< 0.5'
