@@ -53,4 +53,4 @@ production:
   <<: *default
   database: the_helpers_production
   username: the_helpers
-  password: <%= ENV['THE_HELPERS_DATABASE_PASSWORD'] %>
+  password: varunSECRET1027 #<%= ENV['THE_HELPERS_DATABASE_PASSWORD'] %>
