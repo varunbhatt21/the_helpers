@@ -1,3 +1,5 @@
+
+
 # MySQL. Versions 5.1.10 and up are supported.
 #
 # Install the MySQL driver
@@ -47,16 +49,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-
-staging:
-  <<: *default
-  database: the_helpers_staging
-  username: deploy
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-
-
 production:
   <<: *default
   database: the_helpers_production
-  username: deploy
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  username: the_helpers
+  password: <%= ENV['THE_HELPERS_DATABASE_PASSWORD'] %>
