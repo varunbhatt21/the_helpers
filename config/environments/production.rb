@@ -50,7 +50,7 @@ Rails.application.configure do
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
 
-  
+
 
    config.log_level = :debug
 
@@ -91,17 +91,17 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  ENV["GMAIL_USERNAME"] = "varunbhatt21"
-  ENV["GMAIL_PASSWORD"] = "aglet9897284430"
+  ENV["YAHOO_USERNAME"] = "varunbhatt21"
+  ENV["YAHOO_PASSWORD"] = "aglet9897284430"
 
   ActionMailer::Base.smtp_settings ={
-    address: "smtp.gmail.com",
+    address: "smtp.yahoo.com",
     port: 587,
     domain: "example.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: ENV["YAHOO_USERNAME"],
+    password: ENV["YAHOO_PASSWORD"]
   }
 
 end

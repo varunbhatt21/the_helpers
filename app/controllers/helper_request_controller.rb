@@ -20,7 +20,7 @@ class HelperRequestController < ApplicationController
      if @helperreq.save
        BookingMailer.new_booking(@helperreq).deliver_now
        @helperreq.email="varunbhatt21@gmail.com"
-  #     BookingMailer.new_booking(@helperreq).deliver_now
+       BookingMailer.new_booking(@helperreq).deliver_now
        redirect_to(:action => 'show',:id => @helperreq.id)
      else
        render('index')
