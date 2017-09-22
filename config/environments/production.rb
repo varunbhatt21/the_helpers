@@ -91,20 +91,17 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  ENV["YAHOO_USERNAME"] = "varunbhatt21@yahoo.com"
-  ENV["YAHOO_PASSWORD"] = "aglet9897284430"
+  ENV["GMAIL_USERNAME"] = "varunbhatt21"
+  ENV["GMAIL_PASSWORD"] = "aglet9897284430"
 
-ActionMailer::Base.default_charset = "utf-8"
-ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-:address => "smtp.bizmail.yahoo.com",
-:port => 587,
-:domain => "www.your-domain.com",
-:user_name => ENV["YAHOO_USERNAME"],
-:password => ENV["YAHOO_PASSWORD"] ,
-:enable_starttls_auto => true,
-:authentication => :plain
-}
-
+  ActionMailer::Base.smtp_settings ={
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "example.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV["GMAIL_USERNAME"],
+    password: ENV["GMAIL_PASSWORD"]
+  }
 
 end
