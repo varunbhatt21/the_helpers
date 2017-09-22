@@ -45,7 +45,7 @@
 <div class="form-group"
    <tr>
      <th><%= f.label(:date, "Preferred Date") %></th>
-     <td><%= f.date_select :date, :order => [:month, :day, :year], :required => true %> </th>
+     <td><%= f.date_select :date, :order => [:month, :day, :year], :required => true , :include_blank => true %> </th>
    </tr>
 </div>
 

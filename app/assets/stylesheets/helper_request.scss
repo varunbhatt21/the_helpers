@@ -104,3 +104,202 @@ padding-top: 270px;
   border-style: solid;
   border-color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+// SUMIT WORKS
+
+
+/* top bar starts */
+body, html {
+height: 100%;
+margin: 0 auto;
+}
+
+.bg {
+/* The image used */
+background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),image-url('specs.jpg');
+
+/* Full height */
+height: 100%;
+
+margin:0 auto;
+
+filter: alpha(opacity=800);
+
+/* Center and scale the image nicely */
+
+background-repeat: no-repeat;
+background-size: 100% 720px;
+
+}
+.top_bar{background:#ffffff; padding:5px 0; opacity: 0.8;}
+.blackfont{color:#000000; font-size:16px;} /*this code is used for various font colors */
+
+
+/* top bar ends */
+
+
+/* navigation bar starts */
+
+.my_menu1{}
+
+@media (max-width:1200px){
+.my_menu1 .pull-right{float:none !important;}
+
+}
+.navbar-default{background:#ffffff; border:none;}
+.rajnikant{background:#fdfc26;}
+
+
+body {
+position: relative;
+}
+.affix {
+top:0;
+width: 100%;
+z-index: 9999 !important;
+}
+.navbar {
+margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+position: relative;
+top: 50px;
+}
+#contactus {padding-top:50px; }
+#aboutus {padding-top:50px; }
+#section3 {padding-top:50px; }
+#section41 {padding-top:50px;}
+#section42 {padding-top:50px;}
+
+
+/* navigation ends */
+
+
+/* form starts */
+
+.form-control { opacity: 0.9; }
+
+.accentcolor{
+color:#fdfc29;
+}
+
+.the-headline h3 {
+font-size: 15px;
+letter-spacing: 1px;
+text-transform: uppercase;
+font-weight: 300;
+margin-top: 20px;
+}
+
+.color{background:#b3b3ff;}
+
+/* form ends */
+
+/*    footer starts  */
+
+.index-social{
+background-color:#2c2c2c;
+color:#fff;
+}
+
+.link-area .fa-li{
+width:40px;
+height:40px;
+border-radius:50%;
+border:solid 1px #fff;
+list-style-type:none;
+margin:5px;
+display:inline-block;
+}
+
+.index-social a{
+color:#fff;
+font-size:25px;
+display:block;
+float:left;
+padding:10px;
+}
+
+.index-link h3{
+text-align:center;
+color:#f1f1f1;
+text-align:left;
+
+}
+
+.index-link{
+background-color:#000;
+}
+
+.index-link ul{
+padding:0px;
+}
+
+.index-link ul li{
+list-style-type:none;
+}
+
+.index-link ul li a{
+text-decoration:none;
+font-size:16px;
+color:#fff;
+display:block;
+padding:5px 0;
+text-align:left;
+}
+
+.index-link ul li a:hover{
+text-decoration:underline;
+}
+.colo{color:#f1f1f1;}
+
+
+.copy-c{
+padding-top:15px;
+}
+
+/*    end footer     */
+
+
+
+/*	 contact us starts	*/
+
+.concol{background:#1E88E5;}
+
+/*	 end of contact us	 */
+
+
+
+/*  our services starts */
+
+.box{width:250px; height:200px; border:1px solid #000; border-radius:2px; float:left; margin:20px 30px;  }
+.box img{width:250px; height:200px;}
+.box .overlay{width:250px; height:200px;  margin:-200px 0px 0px 0px; opacity:0.1; }
+.box a{padding:5px 7px; border:1px solid #000; text-decoration:none; font-family:sans-serif; font-size:14px; margin:-140px 0px 0px 15px; display:inline-block; opacity:0; transition:all 0.5s ease-in-out;    cursor: pointer;/* z-index: 10000; */position: absolute;}
+
+
+
+.box .overlay:hover{opacity:0.1; transition:all 0.5s ease-in-out; width:300px; margin-left:50px; float:right; }
+.box:hover{box-shadow:0px 0px 10px #6A6A6A; border:1px solid #00DFDF;transition:all 0.5s ease-in-out;}
+.box:hover a{opacity:1; background:#FFFFFF; color:#000000; margin:-40px 0px 0px 15px;  border-radius:1px; }
+.box a:hover{border:1px solid #00DFDF;transition:all 0.5s ease-in-out;   }
+
+
+h1, .h1 {
+font-size: 30px;
+}
+
+.colorservice{background:#b3b3ff;}
+
+/* our services ends  */

@@ -1,64 +1,216 @@
 <%= error_messages_for(@helperreq) %>
 
+ <!-- form starts-->
 
-<div class="row">
-    <div class="container fluid">
+<div class="container">
+ <div class="row" style="padding-top: 50px;">
+   <div class="col-md-6">
+     <div class="well-block">
 
-              <section class="col-sm-8 first">
+                    <header>
+                      <div class="welcome">
+                        <h1>Welcome To TheHelpers <br> &nbsp; we are here to help you  </h1>
+                      <div>
+                    </header>
 
-                 <header>
-                   <div class="welcome">
-                     <h1>Welcome To TheHelpers <br> &nbsp; we are here to help you  </h1>
-                   <div>
-                 </header>
-                   <button id="boo" class="btn btn-primary" data-toggle="modal" data-target="#policy">
-                     Let's Start!!
-                   </button>
-
-
-  <!-- Modal form -->   <div class="modal fade"  id="policy" tabindex="-1" data-keyboard="false" role="dialog"
-                          aria-labelledby="modalLabel">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <button type="button" class="close"
-                                  data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h3 class="modal-title" id="modalLabel"> It just takes few seconds
-                                  !!! </h3>
-                                </div> <!-- modal header -->
-
-                                  <div class="modal-body">
-
-                                    <%= form_for(:helperreq, :url => {:action => 'create'}) do |f| %>
-
-                                     <%= render(:partial => "form2", :locals => {:f =>f}) %>
+                    <button id="boo" class="btn btn-primary" data-toggle="modal" data-target="#policy">
+                      Let's Start!!
+                    </button>
 
 
-                                      <div class="checkbox">
-                                          <label>
-                                            <input
-                                              type="checkbox" required > I accept<a href="#" > helpers terms and conditions</a>
-                                          </label>
+      <!-- Modal form -->   <div class="modal fade"  id="policy" tabindex="-1" data-keyboard="false" role="dialog" aria-labelledby="modalLabel">
+                                                   <div class="modal-dialog" role="document">
+                                                     <div class="modal-content">
+                                                       <div class="modal-header">
+
+                                                               <button type="button" class="close"
+                                                                 data-dismiss="modal" aria-label="Close">
+                                                                 <span aria-hidden="true">&times;</span>
+                                                               </button>
+
+                                                         <h3 class="modal-title" id="modalLabel"> It just takes few seconds
+                                                           !!! </h3>
+                                                         </div> <!-- modal header -->
+
+                                                           <div class="modal-body">
+
+                                                                 <%= form_for(:helperreq, :url => {:action => 'create'}) do |f| %>
+                                                                 <%= render(:partial => "form2", :locals => {:f =>f}) %>
+
+
+                                                               <div class="checkbox">
+                                                                   <label>
+                                                                     <input
+                                                                       type="checkbox" required > I accept<a href="#" > helpers terms and conditions</a>
+                                                                   </label>
+                                                               </div>
+
+                                                               <div class="btn btn-default" id="confirmbook">
+                                                                 <%= submit_tag('Confirm Booking') %>
+                                                               </div>
+
+                                                             <% end %>
+
+                                                           </div> <!-- modal body -->
+                                                     </div><!-- modal content -->
+                                                   </div><!-- modal dialog -->
+                                                 </div><!-- modal -->
+
+                                             </div>
+                                          </div>
+                                        </div>
                                       </div>
+                                    </div>
 
-                                      <div class="btn btn-default" id="confirmbook">
-                                        <%= submit_tag('Confirm Booking') %>
-                                      </div>
+<!-- About US -->
 
-                                    <% end %>
+<div class="container fluid" id="aboutus">
+	<div class="raw">
+		<div class="col-sm-6 col-xs-6 the-headline"  style="padding-top: 20px;">
+			<h1><strong>About <span class="accentcolor">Us</span></strong></h1>
+				<h3 style="font-size:16px; margin-bottom: 30px;">Motto: "We take pride in everything we do"</h3>
+					<p> Here we are for providing a good service at an adaptable price to our customers.
+						we look all over around the work and fix it within a time.
+						As it seems that sometimes we do not have proper tool or idea to fix the problem regarding our service hence work left undone so,
+						for that we provides worker for fix that particular problem.
+					</p>
+					<p> As per customer request we send our employee to given address at the time customer opt.
+						Customer have to fill and submit the form or can call us if unable to proceed.
+					</p>
+		</div>
+	<div class="col-ss-6 col-xs-6">
+     <%=  image_tag('img1.png' ,class: "img-responsive")  %>
+	</div>
+	</div>
+</div>
 
-                                  </div> <!-- modal body -->
-                            </div><!-- modal content -->
-                          </div><!-- modal dialog -->
-                        </div><!-- modal -->
+                          <!-- about us page ends-->
 
-          </section>
 
-<!--   <section class="col-sm-8">
-     <div class="item"> <img src="images/sticky.jpg" alt="boy"> </div>
-   </section> -->
 
-  </div> <!-- container fluid -->
- </div><!--  row -->
+                          <!-- our services starts-->
+
+<div class="container-fluid colorservice" >
+<div class="raw">
+<h2 class="text-center"  style="margin-bottom: 30px;"><strong >OUR SERVICES</strong></h2>
+</div>
+  <div class="raw">
+    <div class="col-sm-12" align="center">
+    <div class="box" style="margin-bottom: 44px;">
+
+      <%=  image_tag('Electrician.PNG' ,class: "img-responsive") %>
+        <div class="overlay"></div>
+          <a class="more" href="#name">More reading</a>
+          <h1 style="margin-top: 0px;" class="text-center">Electrician</h1>
+
+    </div>
+    <div class="box" style="margin-bottom: 44px;">
+        <%=  image_tag('plumber.PNG' ,class: "img-responsive")  %>
+        <div class="overlay"></div>
+          <a href="#">More reading</a>
+          <h1 style="margin-top: 0px;" class="text-center">Plumber</h1>
+    </div>
+
+    <div class="box" style="margin-bottom: 44px;">
+        <%=  image_tag('carpenter.PNG' ,class: "img-responsive")  %>
+        <div class="overlay"></div>
+          <a href="#">More reading</a>
+            <h1 style="margin-top: 0px;" class="text-center">Carpenter</h1>
+    </div>
+
+    <div class="box" style="margin-bottom: 44px;">
+        <%=  image_tag('painter.PNG' ,class: "img-responsive")  %>
+        <div class="overlay"></div>
+          <a href="#">More reading</a>
+          <h1 style="margin-top: 0px;" class="text-center">Painter</h1>
+    </div>
+    </div>
+  </div>
+
+  <div class="raw">
+    <div class="col-sm-12">
+           <!-- why this space khali -->
+    </div>
+  </div>
+
+</div>
+
+                          <!-- our services ends-->
+
+
+
+                          <!-- contact us starts-->
+
+                         <div class="container-fluid concol" id="contactus">
+
+                                    <div class="row">
+
+                                        <div class="col-lg-8 col-lg-offset-2">
+
+                                            <h1>Contact Us</h1>
+
+                                            <form id="contact-form" method="post" action="contact.php" role="form">
+
+                                                <div class="messages"></div>
+
+                                                <div class="controls">
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="form_name">Firstname *</label>
+                                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="form_lastname">Lastname *</label>
+                                                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="form_email">Email *</label>
+                                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="form_phone">Phone</label>
+                                                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="form_message">Message *</label>
+                                                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                        															<!--end of contact us-->
