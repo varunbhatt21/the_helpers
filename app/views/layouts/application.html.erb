@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Helpers4you</title>
+   <title>ApnaHelper</title>
 
   <%= stylesheet_link_tag  'application', media: "all", 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application' , 'data-turbolinks-track' => true  %>
@@ -14,131 +14,143 @@
 </head>
 
 
+                           <!--top bar-->
+
+
 <div class="bg" style="height: 720px;">
-	 <div class="container-fluid blackfont top_bar"  id="home" style="padding-bottom:0px; padding-top:10px">
-     <a class="navbar-brand" href="#featured"><span class="subhead">Helpers4you</span></a>
 
-     <div class="navbar-right">
-               <span class="glyphicon glyphicon-user"></span>
-         <!--  <button type="button"
-                class="btn btn-default navbar-btn" > Log-in </button>  -->
+	    <div class="container-fluid blackfont1 top_bar" id="home" style="padding-bottom:5px; padding-top:5px">
 
-               <div class="btn btn-default navbar-btn" >
-              <%= form_tag(:controller => "access" , :action => 'login') do %>
-                  <%= submit_tag("Log-in") %>
-              <% end %>
-                 </div>
-     </div>
+      <div class="navbar-right">
+                <span class="glyphicon glyphicon-user"></span>
+          <!--  <button type="button"
+                 class="btn btn-default navbar-btn" > Log-in </button>  -->
+
+                <div class="btn btn-default navbar-btn" >
+               <%= form_tag(:controller => "access" , :action => 'login') do %>
+                   <%= submit_tag("Log-in") %>
+               <% end %>
+                  </div>
+      </div>
 
     <div class="container" style="margin-right:30px; padding-right:30px;">
 			<div class="raw">
-				<div class="col-sm-5 col-xs-6">
+				<div class="col-sm-2 col-xs-6" style="margin-bottom: 0px;">
+
+          <%=  image_tag('apnahelper.PNG' ,class: "img-responsive" ,style: "width: 180px;")  %>
 
 
 				</div>
+				<div class="col-sm-5 col-xs-6 pull-right" style="padding-top: 25px;">
+					<p style="margin-bottom: 3px;" ><span class="glyphicon glyphicon-time " style="padding-right: 10px;"></span> WORKING HOURS</p>
+					<p style="border-left-width: 10px;padding-left:5px;"> <strong>Everyday</strong> 9AM-9PM</p>
+				</div>
+				<div class="col-sm-1 col-xs-6">
 
-					<div class="col-sm-2 col-xs-6" style="padding-top: 5px;">
-						<p style="margin-bottom: 3px;" ><span class="glyphicon glyphicon-time " style="padding-right: 10px;"></span> WORKING HOURS</p>
-						<p style="border-left-width: 10px;padding-left:5px;"> <strong>Everyday</strong> 9AM-9PM</p>
-					</div>
+				</div>
+
 			</div><!-- end of raw-->
 		</div><!-- end of container-->
 		</div><!-- end of container fluid -->
 
 													   <!--end of top bar-->
 
-                             <!--  navigation starts-->
+													 <!--  navigation starts-->
 
-                         <body data-spy="scroll" data-target=".navbar" data-offset="50">
-                         	<nav class="navbar navbar-inverse my_menu1" data-spy="affix" data-offset-top="197">
-                         		<div class="container-fluid">
-                         			<div class="navbar-header">
-                         				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                         					<span class="icon-bar"></span>
-                         					<span class="icon-bar"></span>
-                         					<span class="icon-bar"></span>
-                         				</button>
-                         			</div>
-                         		<div>
-                         		<div class="collapse navbar-collapse" id="myNavbar">
-                         			<div class="col-sm-11">
-                         				<ul class="nav navbar-nav pull-right">
-                         					<li><a href="#home">Home</a></li>
-                         					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#services1">Services<span class="caret"></span></a>
-                         				<ul class="dropdown-menu">
-                         					<li><a href="#electrician">Electrician</a></li>
-                         					<li><a href="#plumber">Plumber</a></li>
-                         					<li><a href="#carpenter">Carpenter</a></li>
-                         					<li><a href="#painter">Painter</a></li>
-                         				</ul>
-                         					</li>
-                         					<li><a href="#aboutus">About us</a></li>
-                         					<li><a href="#contactus">Contact us</a></li>
-                         				</ul>
-                         			</div>
-                         		</div>
-                         		</div>
-                         		</div>
-                         	</nav>
-                         </body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar navbar-inverse my_menu1" data-spy="affix" data-offset-top="197">
+		<div class="container-fluid">
+			<div class="col-sm-2 col-xs-6" style="padding-left: 96px;">
+				<div class="icon-bar">
+					<a class="active" href="#home"><i class="fa fa-home"></i></a>
+				</div>
+			</div>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		<div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<div class="col-sm-10 col-xs-6" >
+				<ul class="nav navbar-nav pull-right" style="padding-top: 6px;;padding-right: 80px;width: 440px;">
+					<li style="margin-left: 1px;"><a href="#home">Home</a></li>
+					<li style="margin-left: 1px;"><a href="#aboutus">About us</a></li>
+					<li style="margin-left: 1px;"><a href="#services">Services</a></li>
+					<!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#services1">Services<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#electrician">Electrician</a></li>
+					<li><a href="#plumber">Plumber</a></li>
+					<li><a href="#carpenter">Carpenter</a></li>
+					<li><a href="#painter">Painter</a></li>
+				</ul>
+					</li> -->
 
+					<li style="margin-left: 1px;"><a href="#contactus">Contact us</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		</div>
+	</nav>
+</body>
 
-                         													<!-- end of navigation-->
-
-
+													<!-- end of navigation-->
 
 
     <%= yield %>
 
-<!-- OUR DETAILS -->
 
-<section class="index-link" style="padding-top: 10px;">
-<div class="container">
-<div class="row">
-    <div class="col-md-3">
-            <h3>Logo Here</h3>
-            <P></P>
-    </div>
-    <div class="col-md-2">
-            <h3>Services</h3>
-            <ul>
-            <li><a href="#">Electrician</a></li>
-            <li><a href="#">Plumber</a></li>
-            <li><a href="#">Carpenter</a></li>
-            <li><a href="#">Painter</a></li>
-            </ul>
-    </div>
-    <div class="col-md-2">
-            <h3>Go To</h3>
-            <ul>
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> About</a></li>
-            <li><a href="#"> contact</a></li>
-            </ul>
-    </div>
-    <div class="col-md-3  colo" style="padding-right: 0px;width: 265px;">
-        <div class="link-area">
-            <h3>Contact</h3>
-            <p><span class="glyphicon glyphicon-phone-alt" style="padding-right: 10px;"  ></span>+91-9557179772</p>
-            <p><span class="glyphicon glyphicon-phone-alt" style="padding-right: 10px;"  ></span>+91-9557179772</p>
-            <p><span class="glyphicon glyphicon-envelope"  style="padding-right: 10px;"   ></span>rkshhelpers@gmail.com </p>
+
+    																		<!--Footer starts here-->
+    <section class="footer" style="padding-top: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 ">
+                  <%=  image_tag('apnahelper.PNG' ,class: "img-responsive img-rounded" ,style: "width: 220px;height: 120px;margin-top: 30px; background-color: white;")  %>
+
+                </div>
+                <div class="col-md-2 ">
+                        <h3>Services</h3>
+                        <ul>
+    						<li><a href="#S1">Electrician</a></li>
+    						<li><a href="#S1">Plumber</a></li>
+    						<li><a href="#S1">Carpenter</a></li>
+    						<li><a href="#S1">Painter</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-2 ">
+                        <h3>Go To</h3>
+                        <ul>
+    						<li><a href="#home"> Home</a></li>
+    						<li><a href="#aboutus"> About</a></li>
+    						<li><a href="#contactus"> contact</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-3 colo " style="padding-right: 0px;width: 265px;">
+                    <div class="link-area">
+                        <h3>Contact</h3>
+                        <p  ><span class="glyphicon glyphicon-phone-alt" style="padding-right: 10px;"  ></span>+91-9557179662</p>
+    					<p  ><span class="glyphicon glyphicon-phone-alt" style="padding-right: 10px;"  ></span>+91-9897471319</p>
+    					<p  ><span class="glyphicon glyphicon-envelope"  style="padding-right: 10px;"   ></span>apnahelper@gmail.com</p>
+                    </div>
+                </div>
+    			<div class="col-md-2 colo" style="padding-left: 0px;">
+    				<h3>Address</h3>
+    				<p>Rishikesh Dehradun(INDIA)</p>
+    			</div>
+            </div>
         </div>
-    </div>
-    <div class="col-md-2 colo" style="padding-left: 0px;">
-      <h3>Address</h3>
-      <p>Rishikesh Dehradun(INDIA)</p>
-    </div>
-   </div>
-  </div>
-</section>
+    </section>
 
-
-        <section class="index-social">
-            <div class="container">
-            <div class="row text-center">
-                    <p class="copy-c">© 2016 - All Rights are Reserved</p>
-                </div>
-                </div>
-        </section>
-
-</html>
+    <section class="index-social">
+        <div class="container">
+        <div class="row text-center">
+                <p class="copy-c">© 2016 - All Rights are Reserved</p>
+            </div>
+            </div>
+    </section>
+    																		 <!--end of footer-->
+    </html>

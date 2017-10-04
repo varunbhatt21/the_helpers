@@ -1,5 +1,7 @@
 class HelperRequestController < ApplicationController
 
+layout false , only: [:electrician , :plumber , :carpenter , :painter]
+
   def index
     @helperreq = HelperRequest.new
   end
@@ -36,6 +38,26 @@ class HelperRequestController < ApplicationController
   def save
     @helperreq = HelperRequest.new(helperrequest_params)
     @helperreq.save
+  end
+
+  def electrician
+    render('electrician')
+  end
+
+  def carpenter
+    render('carpenter')
+  end
+
+  def painter
+    render('painter')
+  end
+
+  def plumber
+    render('plumber')
+  end
+
+  def home
+    render('index')
   end
 
   def update

@@ -3,8 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .welcome{
-  font-family:tahoma;
-  color:white;
+  font-family:sans-serif;
+  font-size:30px;
+  color:#e67e22;
   position:absolute;
   top:20px;
   left:180px;
@@ -115,7 +116,12 @@ padding-top: 270px;
 
 
 
+
+
+
+
 // SUMIT WORKS
+
 
 
 /* top bar starts */
@@ -142,6 +148,7 @@ background-size: 100% 720px;
 
 }
 .top_bar{background:#ffffff; padding:5px 0; opacity: 0.8;}
+.blackfont1{color:#000000; font-size:14px;}
 .blackfont{color:#000000; font-size:16px;} /*this code is used for various font colors */
 
 
@@ -149,6 +156,24 @@ background-size: 100% 720px;
 
 
 /* navigation bar starts */
+
+.icon-bar {width: 100%; }/* home button starts */
+
+.icon-bar a {
+float: left;
+width: 60%;
+text-align: center;
+padding: 12px 0;
+color: white;
+font-size: 26px;
+}
+
+.my_menu1 .navbar-nav .active a, .my_menu1 .navbar-nav .active a:hover{background:#0675d6; color:#fff;}
+.my_menu1 .navbar-nav li a:hover{background:#0675d6; color:#fff;}
+
+.active {
+background-color: #0675d6 !important;
+}     /* home button ends  */
 
 .my_menu1{}
 
@@ -179,8 +204,8 @@ top: 50px;
 #contactus {padding-top:50px; }
 #aboutus {padding-top:50px; }
 #section3 {padding-top:50px; }
-#section41 {padding-top:50px;}
-#section42 {padding-top:50px;}
+#section41 {padding-top:50px; }
+#section42 {padding-top:50px; }
 
 
 /* navigation ends */
@@ -190,8 +215,11 @@ top: 50px;
 
 .form-control { opacity: 0.9; }
 
+/* form ends */
+
+/* about us */
 .accentcolor{
-color:#fdfc29;
+color:#0675d6 ;
 }
 
 .the-headline h3 {
@@ -201,10 +229,62 @@ text-transform: uppercase;
 font-weight: 300;
 margin-top: 20px;
 }
+/* end about us */
 
-.color{background:#b3b3ff;}
 
-/* form ends */
+/*  our services starts */
+
+.box{width:250px; height:200px; border:1px solid #000; border-radius:2px; float:left; margin:20px 30px;  }
+.box img{width:250px; height:200px; box-shadow: 17px -11px 17px 2px black;}
+.box .overlay{width:250px; height:200px;  margin:-200px 0px 0px 0px; opacity:0.1; }
+.box a{padding:5px 7px; border:1px solid #000; text-decoration:none; font-family:sans-serif; font-size:14px; margin:-140px 0px 0px 15px; display:inline-block; opacity:0; transition:all 0.5s ease-in-out;    cursor: pointer;/* z-index: 10000; */position: absolute;}
+
+
+
+.box .overlay:hover{opacity:0.1; transition:all 0.5s ease-in-out; width:300px; margin-left:50px; float:right; }
+.box:hover{box-shadow:0px 0px 10px #6A6A6A; border:1px solid #00DFDF;transition:all 0.5s ease-in-out;}
+.box:hover a{opacity:1; background:#FFFFFF; color:#000000; margin:-40px 0px 0px 15px;  border-radius:1px; }
+.box a:hover{border:1px solid #00DFDF;transition:all 0.5s ease-in-out;   }
+
+
+h2, .h2 {
+font-size: 25px;        background-color: rgb(33, 115, 107); box-shadow: 11px -9px 17px 8px black;}    /* box-shadow: 12px -7px 20px 11px black;}*/
+
+.colorservice{background:#acacac;}
+
+
+.col-sm-3 {
+width: 25%;
+box-shadow: 11px -19px 70px 3px  black;
+}
+.blackfont2{color:#000000;}
+
+/* our services ends  */
+
+
+/*	 contact us starts	*/
+
+.concol{background:#1E88E5 ;}
+
+.fontdesign { font-size:35px;
+color: #6d736d;
+letter-spacing: .1em;
+text-shadow: 1px 4px 1px black
+} /* this shadow code id used for contactus, our services and about us headlines */
+
+h1 {
+font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+
+text-align: center;
+text-transform: uppercase;
+text-rendering: optimizeLegibility;
+}
+
+.btn-success{ box-shadow: -2px 8px 8px black;
+}
+
+
+/*	 end of contact us	 */
 
 /*    footer starts  */
 
@@ -231,26 +311,26 @@ float:left;
 padding:10px;
 }
 
-.index-link h3{
+.footer h3{
 text-align:center;
 color:#f1f1f1;
 text-align:left;
 
 }
 
-.index-link{
+.footer{
 background-color:#000;
 }
 
-.index-link ul{
+.footer ul{
 padding:0px;
 }
 
-.index-link ul li{
+.footer ul li{
 list-style-type:none;
 }
 
-.index-link ul li a{
+.footer ul li a{
 text-decoration:none;
 font-size:16px;
 color:#fff;
@@ -259,7 +339,7 @@ padding:5px 0;
 text-align:left;
 }
 
-.index-link ul li a:hover{
+.footer ul li a:hover{
 text-decoration:underline;
 }
 .colo{color:#f1f1f1;}
@@ -273,33 +353,13 @@ padding-top:15px;
 
 
 
-/*	 contact us starts	*/
-
-.concol{background:#1E88E5;}
-
-/*	 end of contact us	 */
 
 
 
-/*  our services starts */
-
-.box{width:250px; height:200px; border:1px solid #000; border-radius:2px; float:left; margin:20px 30px;  }
-.box img{width:250px; height:200px;}
-.box .overlay{width:250px; height:200px;  margin:-200px 0px 0px 0px; opacity:0.1; }
-.box a{padding:5px 7px; border:1px solid #000; text-decoration:none; font-family:sans-serif; font-size:14px; margin:-140px 0px 0px 15px; display:inline-block; opacity:0; transition:all 0.5s ease-in-out;    cursor: pointer;/* z-index: 10000; */position: absolute;}
 
 
 
-.box .overlay:hover{opacity:0.1; transition:all 0.5s ease-in-out; width:300px; margin-left:50px; float:right; }
-.box:hover{box-shadow:0px 0px 10px #6A6A6A; border:1px solid #00DFDF;transition:all 0.5s ease-in-out;}
-.box:hover a{opacity:1; background:#FFFFFF; color:#000000; margin:-40px 0px 0px 15px;  border-radius:1px; }
-.box a:hover{border:1px solid #00DFDF;transition:all 0.5s ease-in-out;   }
 
 
-h1, .h1 {
-font-size: 30px;
-}
 
-.colorservice{background:#b3b3ff;}
-
-/* our services ends  */
+.whitefont{color:#ffffff;} /* for white fonts */
