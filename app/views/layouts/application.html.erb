@@ -22,13 +22,14 @@
 	    <div class="container-fluid blackfont1 top_bar" id="home" style="padding-bottom:5px; padding-top:5px">
 
       <div class="navbar-right">
-                <span class="glyphicon glyphicon-user"></span>
+
           <!--  <button type="button"
                  class="btn btn-default navbar-btn" > Log-in </button>  -->
+                <span class="glyphicon glyphicon-user pull-right"></span>
 
-                <div class="btn btn-default navbar-btn" >
-               <%= form_tag(:controller => "access" , :action => 'login') do %>
-                   <%= submit_tag("Log-in") %>
+                <div class="btn btn-default navbar-btn pull-left" >
+               <%= form_tag(:controller => "access" , :action => 'login' ) do %>
+                   <%= submit_tag("Log-in" , :class => "pull-left") %>
                <% end %>
                   </div>
       </div>
