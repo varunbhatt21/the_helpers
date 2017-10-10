@@ -1,8 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US" style="height: 720px;">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" Content="IE-edge">
+	<meta name="viewport" content="width=device-width">
+	<title>ApnaHelper</title>
+  <%= stylesheet_link_tag "helper_request" %>
+  <%= stylesheet_link_tag  'application', media: "all", 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' , 'data-turbolinks-track' => true  %>
+  <%= csrf_meta_tags %>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+</head>
+
+
 
 <div class="viewback">
-  <h2>Profession</h2>
+  <h2>Requests</h2>
 
-  <%= link_to( image_tag('plus_sign.png', :size => '11x11', :alt => '+') + "Add New Profession", {:action => 'new'}, :class => 'action new') %>
   <div class="table-responsive" > <%= pluralize(@helperreq.size, "entry") %> found </div>
   <table class="table table-condensed viewtable">
     <tr>
@@ -36,3 +50,4 @@
     <% end %>
   </table>
 </div>
+</html>

@@ -1,6 +1,7 @@
 class HelperRequestController < ApplicationController
 
- layout false , only: [:electrician , :plumber , :carpenter , :painter]
+ layout false , only: [:electrician , :plumber , :carpenter , :painter ,:view]
+ 
 
 
   def index
