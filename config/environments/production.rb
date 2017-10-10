@@ -91,8 +91,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  ENV["GMAIL_USERNAME"] = "varunbhatt21"
-  ENV["GMAIL_PASSWORD"] = "aglet9897284430"
+  ENV["GMAIL_USERNAME"] = "apnahelper"
+  ENV["GMAIL_PASSWORD"] = "vasu9598_"
+
+config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings ={
     address: "smtp.gmail.com",
@@ -103,5 +105,7 @@ Rails.application.configure do
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"]
   }
+
+config.action_mailer.default_url_options = { host: "apnahelper.com"}
 
 end

@@ -123,7 +123,6 @@ padding-top: 270px;
 // SUMIT WORKS
 
 
-
 /* top bar starts */
 body, html {
 height: 100%;
@@ -168,11 +167,11 @@ color: white;
 font-size: 26px;
 }
 
-.my_menu1 .navbar-nav .active a, .my_menu1 .navbar-nav .active a:hover{background:#0675d6; color:#fff;}
-.my_menu1 .navbar-nav li a:hover{background:#0675d6; color:#fff;}
+.my_menu1 .navbar-nav .active a, .my_menu1 .navbar-nav .active a:hover{background:#4981CE	; color:#fff;}
+.my_menu1 .navbar-nav li a:hover{background:#4981CE	; color:#fff;}
 
 .active {
-background-color: #0675d6 !important;
+background-color: #4981CE !important;
 }     /* home button ends  */
 
 .my_menu1{}
@@ -253,7 +252,7 @@ font-size: 25px;        background-color: rgb(33, 115, 107); box-shadow: 11px -9
 .colorservice{background:#acacac;}
 
 
-.col-sm-3 {
+.backshadow {
 width: 25%;
 box-shadow: 11px -19px 70px 3px  black;
 }
@@ -264,7 +263,7 @@ box-shadow: 11px -19px 70px 3px  black;
 
 /*	 contact us starts	*/
 
-.concol{background:#1E88E5 ;}
+.concol{background:#4D6FAC ;} /* #4D6FAC  #1E88E5 */
 
 .fontdesign { font-size:35px;
 color: #6d736d;

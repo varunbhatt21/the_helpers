@@ -1,6 +1,7 @@
 class HelperRequestController < ApplicationController
 
-layout false , only: [:electrician , :plumber , :carpenter , :painter]
+ layout false , only: [:electrician , :plumber , :carpenter , :painter]
+
 
   def index
     @helperreq = HelperRequest.new
@@ -21,7 +22,7 @@ layout false , only: [:electrician , :plumber , :carpenter , :painter]
      params[:position] = params[:id].to_i
      if @helperreq.save
        BookingMailer.new_booking(@helperreq).deliver_now
-       @helperreq.email="varunbhatt21@gmail.com"
+       @helperreq.email="apnahelper@gmail.com"
        BookingMailer.new_booking(@helperreq).deliver_now
        redirect_to(:action => 'show',:id => @helperreq.id)
      else

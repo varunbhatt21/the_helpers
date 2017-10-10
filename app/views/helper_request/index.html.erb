@@ -65,165 +65,165 @@
 
 
                                     <!-- about us page starts-->
-
      <div class="container fluid" id="aboutus" style="padding-top: 20px;">
-     	<div class="raw">
-     		<div class="col-sm-6 col-xs-6 the-headline"  style="padding-top: 40px;">
-     			<h1 class="fontdesign" style="margin-bottom: 40px;margin-top: 10px;"><strong>About <span class="accentcolor">Us</span></strong></h1>
-     				<h3 style="font-size:16px; margin-bottom: 30px;">Motto: "We take pride in everything we do"</h3>
-     					<p> Here we are for providing a good service at an adaptable price to our customers.
-     						we look all over around the work and fix it within a time.
-     						As it seems that sometimes we do not have proper tool or idea to fix the problem regarding our service hence work left undone so,
-     						for that we provides worker for fix that particular problem.
-     					</p>
-     					<p> As per customer request we send our employee to given address at the time customer opt.
-     						Customer have to fill and submit the form or can call us if unable to proceed.
-     					</p>
-     		</div>
-     		<div class="col-ss-6 col-xs-6">
-           <%=  image_tag('img1.png' ,class: "img-responsive" , style: "padding-top: 0px")  %>
-     		
-     		</div>
-     	</div>
+       <div class="raw">
+         <div class="col-sm-6 col-xs-6 the-headline"  style="padding-top: 40px;">
+           <h1 class="fontdesign" style="margin-bottom: 40px;margin-top: 10px;"><strong>About <span class="accentcolor">Us</span></strong></h1>
+             <h3 style="font-size:16px; margin-bottom: 30px;">Motto: "We take pride in everything we do"</h3>
+               <p> Here we are for providing a good service at an adaptable price to our customers.
+                 we look all over around the work and fix it within a time.
+                 As it seems that sometimes we do not have proper tool or idea to fix the problem regarding our service hence work left undone so,
+                 for that we provides worker for fix that particular problem.
+               </p>
+               <p> As per customer request we send our employee to given address at the time customer opt.
+                 Customer have to fill and submit the form or can call us if unable to proceed.
+               </p>
+         </div>
+         <div class="col-ss-6 col-xs-6">
+          <%=  image_tag('img1.png' ,class: "img-responsive" , style: "padding-top: 20px")  %>
+         </div>
+       </div>
      </div>
-     														<!-- about us page ends-->
+                                 <!-- about us page ends-->
 
 
-                                <!-- our services starts-->
-
-    <div class="container-fluid colorservice" id="services" >
-    	<div class="raw">
-    		<h1 class="text-center fontdesign" id="S1"  style="margin-bottom: 70px;margin-top: 70px;"><strong ><span class="accentcolor">OUR</span> SERVICES</strong></h1>
-    	</div>
-    	<div class="container-fluid">
-    		<div class="raw">
-
-    			<div class="col-sm-3">
-    			<div class="box" style="margin-bottom: 44px;">
-    				  <%=  image_tag('Electrician.PNG' ,class: "img-responsive") %>
-    					<div class="overlay"></div>
-    						<a class="more" href="file:///C:/Users/sumit/Desktop/80%25/Electrician.html">More reading</a>
-                <%= link_to("More reading", {:action => 'electrician'}) %>
-                <h2 style="margin-top: 0px;width: 250px;" class="text-center"><strong>Electrician</strong></h2>
-
-    			</div>
-    			</div>
-
-    			<div class="col-sm-3">
-    			<div class="box" style="margin-bottom: 44px;">
-    				<%=  image_tag('plumber.PNG' ,class: "img-responsive")  %>
-    					<div class="overlay"></div>
-    						<a href="file:///C:/Users/sumit/Desktop/80%25/Plumber.html#home" >More reading</a>
-                <%= link_to("More reading", {:action => 'plumber'}) %>
-    						<h2 style="margin-top: 0px;width: 250px;"  class="text-center"><strong>Plumber</strong></h2>
-    			</div>
-    			</div>
-
-    			<div class="col-sm-3">
-    			<div class="box" style="margin-bottom: 44px;">
-    				<%=  image_tag('carpenter.PNG' ,class: "img-responsive")  %>
-    					<div class="overlay"></div>
-    						<a href="file:///C:/Users/sumit/Desktop/80%25/Carpenter.html">More reading</a>
-                <%= link_to("More reading", {:action => 'carpenter'}) %>
-    							<h2 style="margin-top: 0px;width: 250px;" class="text-center"><strong>Carpenter</strong></h2>
-    			</div>
-    			</div>
-
-    			<div class="col-sm-3">
-    			<div class="box" style="margin-bottom: 44px;">
-    				  <%=  image_tag('painter.PNG' ,class: "img-responsive")  %>
-    					<div class="overlay"></div>
-    						<a href="file:///C:/Users/sumit/Desktop/80%25/Painter.html">More reading</a>
-                <%= link_to("More reading", {:action => 'painter'}) %>
-    						<h2 style="margin-top: 0px;width: 250px;" class="text-center"><strong>Painter</strong></h2>
-    			</div>
-    			</div>
-
-    		</div>
-    	</div>
-
-    		<div class="raw">
-
-    				<h3 class="text-center" style="margin-bottom: 50px;margin-top: 40px;"><strong class="blackfont2">"We Take Care of Our Customers"</strong></h3>
 
 
-    		</div>
-    </div>
+                                 <!-- our services starts-->
 
-    														<!-- our services ends-->
+           <div class="container-fluid colorservice" id="services" >
+           <div class="raw">
+           <h1 class="text-center fontdesign" id="S1"  style="margin-bottom: 70px;margin-top: 70px;"><strong ><span class="accentcolor">OUR</span> SERVICES</strong></h1>
+           </div>
+           <div class="container-fluid">
+           <div class="raw">
+
+           <div class="col-sm-3 backshadow">
+           <div class="box" style="margin-bottom: 44px;">
+           <%=  image_tag('Electrician.PNG' ,class: "img-responsive") %>
+               <div class="overlay"></div>
+                   <%= link_to("More reading", {:action => 'electrician'}) %>
+                 <h2 style="margin-top: 0px;width: 250px;" class="text-center"><strong>Electrician</strong></h2>
+
+           </div>
+           </div>
+
+           <div class="col-sm-3 backshadow">
+           <div class="box" style="margin-bottom: 44px;">
+             <%=  image_tag('plumber.PNG' ,class: "img-responsive")  %>
+               <div class="overlay"></div>
+                 <%= link_to("More reading", {:action => 'plumber'}) %>
+                 <h2 style="margin-top: 0px;width: 250px;"  class="text-center"><strong>Plumber</strong></h2>
+           </div>
+           </div>
+
+           <div class="col-sm-3 backshadow">
+           <div class="box" style="margin-bottom: 44px;">
+             <%=  image_tag('carpenter.PNG' ,class: "img-responsive")  %>
+               <div class="overlay"></div>
+                 <%= link_to("More reading", {:action => 'carpenter'}) %>
+                   <h2 style="margin-top: 0px;width: 250px;" class="text-center"><strong>Carpenter</strong></h2>
+           </div>
+           </div>
+
+           <div class="col-sm-3 backshadow">
+           <div class="box" style="margin-bottom: 44px;">
+              <%=  image_tag('painter.PNG' ,class: "img-responsive")  %>
+               <div class="overlay"></div>
+                   <%= link_to("More reading", {:action => 'painter'}) %>
+                 <h2 style="margin-top: 0px;width: 250px;" class="text-center"><strong>Painter</strong></h2>
+           </div>
+           </div>
+
+           </div>
+           </div>
+
+           <div class="raw">
+
+             <h3 class="text-center" style="margin-bottom: 50px;margin-top: 40px;"><strong class="blackfont2">"We Take Care of Our Customers"</strong></h3>
 
 
-                                <!-- contact us starts-->
+           </div>
 
-<div class="container-fluid concol" id="contactus">
 
-<div class="row">
 
-<div class="col-lg-8 col-lg-offset-2">
 
-    <h1 class="fontdesign" style="margin-bottom: 40px;margin-top: 20px;"><strong>Contact<span class="accentcolor"> Us</span></strong></h1>
+           </div>
 
-    <form id="contact-form" method="post" action="contact.php" role="form">
+                                 <!-- our services ends-->
 
-        <div class="messages"></div>
+                                 <!-- contact us starts-->
 
-        <div class="controls">
+                       <div class="container-fluid concol" id="contactus">
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_name">Firstname *</label>
-                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_lastname">Lastname *</label>
-                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_email">Email *</label>
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_phone">Phone</label>
-                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="form_message">Message *</label>
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-md-12 ">
-                    <input type="submit" class="btn btn-success btn-send" value="Send message" >
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p style="margin-top: 15px;margin-bottom: 70px;"><strong>*</strong> These fields are required.</p>
-                </div>
-            </div>
-        </div>
+                       <div class="row">
 
-    </form>
+                       <div class="col-lg-8 col-lg-offset-2">
 
-  </div>
+                         <h1 class="fontdesign" style="margin-bottom: 40px;margin-top: 20px;"><strong>Contact<span class="accentcolor"> Us</span></strong></h1>
 
-  </div>
+                         <form id="contact-form" method="post" action="contact.php" role="form">
 
-</div>
+                             <div class="messages"></div>
+
+                             <div class="controls">
+
+                                 <div class="row">
+                                     <div class="col-md-6">
+                                         <div class="form-group">
+                                             <label for="form_name">Firstname *</label>
+                                             <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                             <div class="help-block with-errors"></div>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-6">
+                                         <div class="form-group">
+                                             <label for="form_lastname">Lastname *</label>
+                                             <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                             <div class="help-block with-errors"></div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-md-6">
+                                         <div class="form-group">
+                                             <label for="form_email">Email *</label>
+                                             <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                             <div class="help-block with-errors"></div>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-6">
+                                         <div class="form-group">
+                                             <label for="form_phone">Phone</label>
+                                             <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                             <div class="help-block with-errors"></div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <div class="form-group">
+                                             <label for="form_message">Message *</label>
+                                             <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                             <div class="help-block with-errors"></div>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-12 ">
+                                         <input type="submit" class="btn btn-success btn-send" value="Send message" >
+                                     </div>
+                                 </div>
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <p style="margin-top: 15px;margin-bottom: 70px;"><strong>*</strong> These fields are required.</p>
+                                     </div>
+                                 </div>
+                             </div>
+
+                         </form>
+
+                       </div>
+
+                       </div>
+
+                       </div>
+                                   <!--end of contact us-->
