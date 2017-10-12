@@ -28,11 +28,11 @@
                                                                  <span aria-hidden="true">&times;</span>
                                                                </button>
 
-                                                         <h3 class="modal-title" id="modalLabel"> It just takes few seconds
+                                                         <h3 class="modal-title" id="modalLabel" > It just takes few seconds
                                                            !!! </h3>
                                                          </div> <!-- modal header -->
 
-                                                           <div class="modal-body">
+                                                           <div class="modal-body"  >
 
                                                                  <%= form_for(:helperreq, :url => {:action => 'create'}) do |f| %>
                                                                  <%= render(:partial => "form2", :locals => {:f =>f}) %>
@@ -45,8 +45,8 @@
                                                                    </label>
                                                                </div>
 
-                                                               <div class="btn btn-default" id="confirmbook">
-                                                                 <%= submit_tag('Confirm Booking') %>
+                                                               <div class="btn-group" id="confirmbook" >
+                                                                 <%= submit_tag('Confirm Booking' , class: "btn btn-primary" ) %>
                                                                </div>
 
                                                              <% end %>
