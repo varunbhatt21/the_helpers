@@ -1,0 +1,504 @@
+/* line 5, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.welcome {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #e67e22;
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 15, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#boo {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  border: 1px solid #e67e22;
+  padding: 5px 30px;
+  margin-top: 50px;
+  border-radius: 12px;
+}
+
+/* line 26, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#policy {
+  color: #4B515D;
+}
+
+/* line 30, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#boo:hover {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  background-color: #e67e22;
+}
+
+/* line 35, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.bodyindex {
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/specs-e4354859f62ac8d71db573e32bbd8b17e86cb4f0b1b0e4715eaa64baf72e727f.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/specs-e4354859f62ac8d71db573e32bbd8b17e86cb4f0b1b0e4715eaa64baf72e727f.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 720px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: relative;
+}
+
+/* line 45, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.btn {
+  border: 0;
+  padding: 2px 2px;
+}
+
+/* line 50, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.forposn {
+  position: relative;
+}
+
+/* line 54, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.first {
+  position: absolute;
+  top: 180px;
+}
+
+/* line 59, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#featured .item {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
+}
+
+/* line 68, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.carousel-inner > .item {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+/* line 75, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+footer .navbar-default {
+  background: transparent;
+}
+
+/* line 79, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.col-sm-6 {
+  width: 50%;
+  padding-top: 150px;
+}
+
+/* line 86, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.footerpos {
+  padding-top: 270px;
+}
+
+/* line 90, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.jumbotron h3 {
+  font-family: Georgia, serif;
+}
+
+/* line 94, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.jumbotron p {
+  font-family: Georgia, serif;
+  font-size-adjust: 0.40;
+}
+
+/* line 99, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.viewtable {
+  background: transparent;
+  background-color: black;
+  background-image: none;
+  color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* top bar starts */
+/* line 127, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+body, html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 132, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.bg {
+  /* The image used */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.3))), url(/assets/specs-e4354859f62ac8d71db573e32bbd8b17e86cb4f0b1b0e4715eaa64baf72e727f.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(/assets/specs-e4354859f62ac8d71db573e32bbd8b17e86cb4f0b1b0e4715eaa64baf72e727f.jpg);
+  /* Full height */
+  height: 100%;
+  margin: 0 auto;
+  filter: alpha(opacity=800);
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: 100% 720px;
+}
+
+/* line 149, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.top_bar {
+  background: #ffffff;
+  padding: 5px 0;
+  opacity: 0.8;
+}
+
+/* line 150, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.blackfont1 {
+  color: #000000;
+  font-size: 14px;
+}
+
+/* line 151, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.blackfont {
+  color: #000000;
+  font-size: 16px;
+}
+
+/*this code is used for various font colors */
+/* top bar ends */
+/* navigation bar starts */
+/* line 159, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.icon-bar {
+  width: 100%;
+}
+
+/* home button starts */
+/* line 161, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.icon-bar a {
+  float: left;
+  width: 60%;
+  text-align: center;
+  padding: 12px 0;
+  color: white;
+  font-size: 26px;
+}
+
+/* line 170, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.my_menu1 .navbar-nav .active a, .my_menu1 .navbar-nav .active a:hover {
+  background: #4981CE;
+  color: #fff;
+}
+
+/* line 171, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.my_menu1 .navbar-nav li a:hover {
+  background: #4981CE;
+  color: #fff;
+}
+
+/* line 173, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.active {
+  background-color: #4981CE !important;
+}
+
+/* home button ends  */
+@media (max-width: 1200px) {
+  /* line 180, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+  .my_menu1 .pull-right {
+    float: none !important;
+  }
+}
+/* line 183, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.navbar-default {
+  background: #ffffff;
+  border: none;
+}
+
+/* line 184, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.rajnikant {
+  background: #fdfc26;
+}
+
+/* line 187, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+body {
+  position: relative;
+}
+
+/* line 190, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important;
+}
+
+/* line 195, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.navbar {
+  margin-bottom: 0px;
+}
+
+/* line 199, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.affix ~ .container-fluid {
+  position: relative;
+  top: 50px;
+}
+
+/* line 203, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#contactus {
+  padding-top: 50px;
+}
+
+/* line 204, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#aboutus {
+  padding-top: 50px;
+}
+
+/* line 205, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#section3 {
+  padding-top: 50px;
+}
+
+/* line 206, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#section41 {
+  padding-top: 50px;
+}
+
+/* line 207, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+#section42 {
+  padding-top: 50px;
+}
+
+/* navigation ends */
+/* form starts */
+/* line 215, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.form-control {
+  opacity: 0.9;
+}
+
+/* form ends */
+/* about us */
+/* line 220, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.accentcolor {
+  color: #0675d6;
+}
+
+/* line 224, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.the-headline h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* end about us */
+/*  our services starts */
+/* line 236, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box {
+  width: 250px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  float: left;
+  margin: 20px 30px;
+}
+
+/* line 237, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box img {
+  width: 250px;
+  height: 200px;
+  -webkit-box-shadow: 17px -11px 17px 2px black;
+          box-shadow: 17px -11px 17px 2px black;
+}
+
+/* line 238, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box .overlay {
+  width: 250px;
+  height: 200px;
+  margin: -200px 0px 0px 0px;
+  opacity: 0.1;
+}
+
+/* line 239, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box a {
+  padding: 5px 7px;
+  border: 1px solid #000;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: -140px 0px 0px 15px;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  /* z-index: 10000; */
+  position: absolute;
+}
+
+/* line 243, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box .overlay:hover {
+  opacity: 0.1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 300px;
+  margin-left: 50px;
+  float: right;
+}
+
+/* line 244, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box:hover {
+  -webkit-box-shadow: 0px 0px 10px #6A6A6A;
+          box-shadow: 0px 0px 10px #6A6A6A;
+  border: 1px solid #00DFDF;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 245, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box:hover a {
+  opacity: 1;
+  background: #FFFFFF;
+  color: #000000;
+  margin: -40px 0px 0px 15px;
+  border-radius: 1px;
+}
+
+/* line 246, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.box a:hover {
+  border: 1px solid #00DFDF;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 249, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+h2, .h2 {
+  font-size: 25px;
+  background-color: #21736b;
+  -webkit-box-shadow: 11px -9px 17px 8px black;
+          box-shadow: 11px -9px 17px 8px black;
+}
+
+/* box-shadow: 12px -7px 20px 11px black;}*/
+/* line 252, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.colorservice {
+  background: #acacac;
+}
+
+/* line 255, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.backshadow {
+  width: 25%;
+  -webkit-box-shadow: 11px -19px 70px 3px  black;
+          box-shadow: 11px -19px 70px 3px  black;
+}
+
+/* line 259, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.blackfont2 {
+  color: #000000;
+}
+
+/* our services ends  */
+/*	 contact us starts	*/
+/* line 266, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.concol {
+  background: #4D6FAC;
+}
+
+/* #4D6FAC  #1E88E5 */
+/* line 268, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.fontdesign {
+  font-size: 35px;
+  color: #6d736d;
+  letter-spacing: .1em;
+  text-shadow: 1px 4px 1px black;
+}
+
+/* this shadow code id used for contactus, our services and about us headlines */
+/* line 274, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 282, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.btn-success {
+  -webkit-box-shadow: -2px 8px 8px black;
+          box-shadow: -2px 8px 8px black;
+}
+
+/*	 end of contact us	 */
+/*    footer starts  */
+/* line 290, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.index-social {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+/* line 295, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.link-area .fa-li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px #fff;
+  list-style-type: none;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* line 305, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.index-social a {
+  color: #fff;
+  font-size: 25px;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+
+/* line 313, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.footer h3 {
+  text-align: center;
+  color: #f1f1f1;
+  text-align: left;
+}
+
+/* line 320, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.footer {
+  background-color: #000;
+}
+
+/* line 324, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.footer ul {
+  padding: 0px;
+}
+
+/* line 328, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.footer ul li {
+  list-style-type: none;
+}
+
+/* line 332, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.footer ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  padding: 5px 0;
+  text-align: left;
+}
+
+/* line 341, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* line 344, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.colo {
+  color: #f1f1f1;
+}
+
+/* line 347, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.copy-c {
+  padding-top: 15px;
+}
+
+/*    end footer     */
+/* line 364, /home/varun/Sites/the_helpers/app/assets/stylesheets/helper_request.scss */
+.whitefont {
+  color: #ffffff;
+}
+
+/* for white fonts */

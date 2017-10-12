@@ -50,11 +50,11 @@
  <body data-spy="scroll" data-target=".navbar" data-offset="50">
  	<nav class="navbar navbar-inverse my_menu1" data-spy="affix" data-offset-top="197">
  		<div class="container-fluid">
- 			<div class="col-sm-2 col-xs-6" style="padding-left: 96px;">
- 				<div class="icon-bar">
- 					<a class="active" href="#home"><i class="fa fa-home"></i></a>
- 				</div>
- 			</div>
+ 			<div class="col-sm-2 col-xs-6">
+        <%= link_to "index" do %>
+             <%= image_tag('homelogo.PNG' ,style: "padding-right:40px") %>
+        <% end %>
+        </div>
  			<div class="navbar-header">
  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
  					<span class="icon-bar"></span>
