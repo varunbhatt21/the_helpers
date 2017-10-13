@@ -51,7 +51,8 @@
  	<nav class="navbar navbar-inverse my_menu1" data-spy="affix" data-offset-top="197">
  		<div class="container-fluid">
  			<div class="col-sm-2 col-xs-6">
-        <%= link_to "index" do %>
+
+        <%= link_to({:controller => 'helper_request', :action => 'index'}) do %>
              <%= image_tag('homelogo.PNG' ,style: "padding-right:40px" , class: "pull-right" ) %>
         <% end %>
         </div>

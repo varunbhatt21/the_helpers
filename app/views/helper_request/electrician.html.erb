@@ -16,11 +16,11 @@
 													 <!--  navigation starts-->
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-inverse my_menu1"  data-offset-top="197">
+	<nav class="navbar navbar-inverse my_menu1"  data-offset-top="197" data-spy="affix" data-offset-top="197">
 		<div class="container-fluid">
 			<div class="col-sm-2 col-xs-6">
         <%= link_to "index" do %>
-             <%= image_tag('homelogo.PNG' ,style: "padding-right:40px") %>
+             <%= image_tag('homelogo.PNG' ,style: "padding-right:40px" , class: "pull-right") %>
         <% end %>
 			</div>
 			<div class="navbar-header">
