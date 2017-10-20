@@ -22,9 +22,9 @@ class HelperRequestController < ApplicationController
      @helperreq = HelperRequest.new(helperrequest_params)
      params[:position] = params[:id].to_i
      if @helperreq.save
-#       BookingMailer.new_booking(@helperreq).deliver_now
+       BookingMailer.new_booking(@helperreq).deliver_now
        @helperreq.email="apnahelper@gmail.com"
-#       BookingMailer.new_booking(@helperreq).deliver_now
+       BookingMailer.new_booking(@helperreq).deliver_now
        redirect_to(:action => 'show',:id => @helperreq.id)
      else
        render('index')
