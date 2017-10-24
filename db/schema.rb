@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170817160959) do
+ActiveRecord::Schema.define(version: 20171022113812) do
 
   create_table "admin_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "first_name", limit: 25
@@ -32,6 +32,20 @@ ActiveRecord::Schema.define(version: 20170817160959) do
     t.integer "admin_user_id"
     t.integer "helper_list_id"
     t.index ["admin_user_id", "helper_list_id"], name: "index_admin_users_lists_on_admin_user_id_and_helper_list_id"
+  end
+
+  create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string "fname", limit: 50
+    t.string "lname", limit: 50
+    t.string "description", limit: 500
+    t.string "string", limit: 500
+    t.date "cdate"
+    t.string "cemail", default: "", null: false
+    t.string "cmobile", limit: 12
+    t.string "cstatus"
+    t.integer "cposition"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "helper_lists", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|

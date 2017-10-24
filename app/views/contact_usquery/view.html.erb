@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US" style="height: 720px;">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" Content="IE-edge">
+	<meta name="viewport" content="width=device-width">
+	<title>ApnaHelper</title>
+  <%= stylesheet_link_tag "helper_request" %>
+  <%= stylesheet_link_tag  'application', media: "all", 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' , 'data-turbolinks-track' => true  %>
+  <%= csrf_meta_tags %>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+</head>
+
+
+<div class="viewback">
+  <h2>Queries</h2>
+
+<div class="table-responsive" > <%= pluralize(@contactus.size, "entry") %> found </div>
+  <table class="table table-condensed viewtable">
+    <tr>
+      <th>&nbsp;</th>
+      <th>Name<th>
+
+      <th>mobile</th>
+      <th>email</th>
+      <th>Message</th>
+      <th>Status</th>
+      <td>&nbsp;</td>
+
+      <th> Delete </th>
+
+    </tr>
+    <% @contactus.each do |contact| %>
+    <tr>
+      <td><%= contact.cposition %></td>
+      <td><%= contact.fname + " " %><%= contact.lname %></td>
+
+      <td>&nbsp;</td>
+
+      <td><%= contact.cmobile %></td>
+      <td><%= contact.cemail %></td>
+      <td><%= contact.description %></td>
+
+      <td>&nbsp;</td>
+
+      <td>&nbsp;</td>
+      <td>  <%= link_to("Delete", {:action => 'delete' , :id => contact.id} , :class => "btn btn-danger") %></td>
+
+    </tr>
+    <% end %>
+  </table>
+</div>
+
+
+
+</html>

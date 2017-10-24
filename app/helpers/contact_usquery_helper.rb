@@ -1,0 +1,2 @@
+module ContactUsqueryHelper
+end

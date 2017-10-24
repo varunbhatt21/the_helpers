@@ -3,15 +3,14 @@ class HelperRequestController < ApplicationController
  layout false , only: [:electrician , :plumber , :carpenter , :painter ,:view, :show]
 
 
-
   def index
     @helperreq = HelperRequest.new
-    render("index")
+    @contactus = Contact.new
+
   end
 
   def show
     @helperreq = HelperRequest.find(params[:id])
-
   end
 
   def new
@@ -31,6 +30,10 @@ class HelperRequestController < ApplicationController
      end
   end
 
+
+
+
+
   def delete
     helperreq = HelperRequest.find(params[:id]).destroy
     flash[:notice] = "Profession '#{helperreq.name}' Destroyed Successfully"
@@ -41,6 +44,8 @@ class HelperRequestController < ApplicationController
     @helperreq = HelperRequest.new(helperrequest_params)
     @helperreq.save
   end
+
+
 
   def electrician
     render('electrician')
@@ -79,7 +84,7 @@ class HelperRequestController < ApplicationController
   private
 
     def helperrequest_params
-       params.require(:helperreq).permit(:name ,:service,:address,:mobile,:email,:date,:time,:position,:Status)
+       params.require(:helperreq).permit(:name,:service,:address,:mobile,:email,:date,:time,:position,:Status)
     end
 
 end

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   root "helper_request#index"
   resources :sendmailers
   get 'admin' , :to => "access#index"

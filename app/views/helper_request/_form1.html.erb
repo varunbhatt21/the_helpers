@@ -1,0 +1,52 @@
+
+<div class="row">
+    <div class="col-md-6">
+      <div class="form-group"
+         <tr>
+           <th><%= f.label(:fname, "First Name *") %></th>
+           <td><%= f.text_field :fname ,:required => true ,maxlength: 25, class: "form-control" ,minlength: 4,onchange:"this.setCustomValidity(validity.valueMissing ? 'Please enter your Name' : '');" %></td>
+         </tr>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group"
+         <tr>
+           <th><%= f.label(:lname, "Last Name ") %></th>
+           <td><%= f.text_field :lname ,maxlength: 25 , class: "form-control", minlength: 4,onchange:"this.setCustomValidity(validity.valueMissing ? 'Please enter your Name' : '');" %></td>
+         </tr>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+      <div class="form-group"
+        <tr>
+          <th><%= f.label(:cemail,"E-mail *") %></th>
+          <td><%= f.text_field :cemail , type:'email',:required => true, class: "form-control",  placeholder: "Enter a valid email address"  %></td>
+        </tr>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+       <tr>
+         <th><%= f.label(:cmobile, "Mobile No *") %></th>
+         <td><%= f.text_field :cmobile , class: "form-control" ,:required => true,maxlength: 15,onchange: "this.setCustomValidity(validity.valueMissing ? 'Please enter a valid Mobile No.' : '');" %></td>
+       </tr>
+      </div>
+    </div>
+</div>
+
+<div class="row">
+           <div class="col-md-12">
+               <div class="form-group">
+                   <%= f.label(:description, "Message *") %>
+                   <%= f.text_area(:description, required: true ,maxlength: 450,minlength: 100,size: "24x6" ,class: "form-control",placeholder: "Message for us") %>
+                  <div class="help-block with-errors"></div>
+               </div>
+           </div>
+
+
+  
