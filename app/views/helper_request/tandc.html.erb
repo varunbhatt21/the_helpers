@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en-US" style="height: 720px;">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" Content="IE-edge">
+	<meta name="viewport" content="width=device-width">
+	<title>ApnaHelper</title>
+  <%= stylesheet_link_tag "helper_request" %>
+  <%= stylesheet_link_tag  'application', media: "all", 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' , 'data-turbolinks-track' => true  %>
+  <%= csrf_meta_tags %>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+</head>
+
+<!--  navigation starts-->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse my_menu1"  data-offset-top="197"  data-offset-top="197">
+<div class="container-fluid">
+<div class="col-sm-2 col-xs-6">
+<%= link_to "index" do %>
+<%= image_tag('homelogo.PNG' ,style: "padding-right:40px" , class: "pull-right") %>
+<% end %>
+</div>
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<div class="col-sm-10 col-xs-6" >
+<ul class="nav navbar-nav pull-right" style="padding-top:6px; padding-bottom:4px ;padding-right: 80px;width: 480px;">
+<li style="margin-left: 1px;"><a class="active" href="electrician.html"><strong class="whitefont">Electrical</strong></a></li>
+<li style="margin-left: 1px;"><a href="plumber.html"><strong >Plumber</strong></a></li>
+<li style="margin-left: 1px;"><a href="carpenter.html"><strong>Carpenter</strong></a></li>
+<li style="margin-left: 1px;"><a href="painter.html"><strong>Painter</strong></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</body>
+
+<body>
+
+ <div class="container-fluid love" style="padding:0px;">
+	<div class="raw">
+		<div class="col-sm-3" >
+			<h3 class="idiot"><strong> ApnaHelper <br><br>Terms & Conditions</strong></h3>
+		</div>
+	</div>
+ </div>
+ <div class="container" style="padding:20px;">
+	<div class="raw">
+		<pre><strong style="font-size:16px;"> Terms and conditions are for the customer's safety and benefits<br> so, please kindly readout the points below.</strong></pre>
+			<ul style="font-size:16px; padding-top:10px;">
+				<p><li>Customer should ensure about serviceman identity.</li></p>
+				<p><li>All tools related to service must be carried out by serviceman so, customer not to arrange any tool for work.</li></p>
+				<p><li>If there is need of installation , then the customer should arrange or pay for the installed part.</li></p>
+				<p><li>Work must be under the guidance of customer hence customer should be present there.</li></p>
+				<p><li>Customer must notice the entry and exit time of serviceman and Before serviceman left, customer should ensure about all of his things.</p></li>
+				<p><li>A serviceman will perform his service that customer opt in booking form.</li></p>
+			</ul>
+	</div>
+ </div>
+ <div class="container" style="padding:20px;">
+	<div class="raw">
+		<h1 style="font-size:20px; padding-bottom:10px;"><strong>Payment/Fee Options</strong></h1>
+			<ul style="font-size:16px;">
+				<p><li>Payment can be accepted through online or offline, depends upon customer choice.</li></p>
+				<p><li>A minimum 100 Rupees must be paid by customer if no work is done by serviceman.</li></p>
+				<p><li>A minimum amount must be charged to a serviceman, if there needs more than one then extra charge must be added.</li></p>
+				<p><li>Service fee can be collected by our person, Dont't pay any fee to the serviceman.</li></p>
+			</ul>
+	</div>
+ </div>
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript"></script>
+</body>
+									<!--Footer starts here-->
+<section class="footer" style="padding-top: 10px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+              <%=  image_tag('apnahelper.PNG' ,class: "img-responsive img-rounded" ,style: "width: 220px;height: 120px;margin-top: 30px; background-color: white;")  %>
+
+                   </div>
+            <div class="col-md-2 ">
+                    <h3>Services</h3>
+                    <ul>
+						<li><a href="#S1">Electrician</a></li>
+						<li><a href="#S1">Plumber</a></li>
+						<li><a href="#S1">Carpenter</a></li>
+						<li><a href="#S1">Painter</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-2 ">
+                    <h3>Go To</h3>
+                    <ul>
+						<li><a href="#home"> Home</a></li>
+						<li><a href="#aboutus"> About</a></li>
+						<li><a href="#contactus"> contact</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-3 colo " style="padding-right: 0px;width: 265px;">
+                <div class="link-area">
+                    <h3>Contact</h3>
+                    <p  ><span class="glyphicon glyphicon-phone-alt" style="padding-right: 10px;"  ></span>+91-9557179662</p>
+					<p  ><span class="glyphicon glyphicon-phone-alt" style="padding-right: 10px;"  ></span>+91-9897471319</p>
+					<p  ><span class="glyphicon glyphicon-envelope"  style="padding-right: 10px;"   ></span>apnahelper@gmail.com</p>
+                </div>
+            </div>
+			<div class="col-md-2 colo" style="padding-left: 0px;">
+				<h3>Address</h3>
+				<p>Rishikesh Dehradun(INDIA)</p>
+			</div>
+        </div>
+    </div>
+</section>
+
+<section class="index-social">
+    <div class="container">
+    <div class="row text-center">
+            <p class="copy-c">© 2017 - All Rights are Reserved</p>
+        </div>
+        </div>
+</section>
+																		 <!--end of footer-->
+</html>

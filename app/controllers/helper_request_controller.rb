@@ -1,6 +1,6 @@
 class HelperRequestController < ApplicationController
 
- layout false , only: [:electrician , :plumber , :carpenter , :painter ,:view, :show]
+ layout false , only: [:electrician , :plumber , :carpenter , :painter ,:view, :show , :tandc]
 
 
   def index
@@ -67,6 +67,9 @@ class HelperRequestController < ApplicationController
     render('index')
   end
 
+  def tandc
+    render('tandc')
+  end
   def update
     @helperreq = HelperRequest.find(params[:id])
     if @helperreq.update_attributes(helperrequest_params)
