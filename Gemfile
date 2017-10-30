@@ -24,6 +24,7 @@ gem 'rails', '~> 5.1.2'
 gem 'bootstrap_form'
 
 
+
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
