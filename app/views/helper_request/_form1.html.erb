@@ -4,7 +4,7 @@
       <div class="form-group"
          <tr>
            <th><%= f.label(:fname, "First Name *") %></th>
-           <td><%= f.text_field :fname ,:required => true ,maxlength: 25, class: "form-control" ,minlength: 4,onchange:"this.setCustomValidity(validity.valueMissing ? 'Please enter your Name' : '');" %></td>
+           <td><%= f.text_field :fname ,:required => true ,maxlength: 25, class: "form-control" , placeholder: "Enter Your First Name" ,minlength: 4,onchange:"this.setCustomValidity(validity.valueMissing ? 'Please enter your Name' : '');" %></td>
          </tr>
       </div>
     </div>
@@ -12,7 +12,7 @@
       <div class="form-group"
          <tr>
            <th><%= f.label(:lname, "Last Name ") %></th>
-           <td><%= f.text_field :lname ,maxlength: 25 , class: "form-control", minlength: 4,onchange:"this.setCustomValidity(validity.valueMissing ? 'Please enter your Name' : '');" %></td>
+           <td><%= f.text_field :lname ,maxlength: 25 , class: "form-control", minlength: 4, placeholder: "Enter Your Last Name" ,onchange:"this.setCustomValidity(validity.valueMissing ? 'Please enter your Name' : '');" %></td>
          </tr>
       </div>
     </div>
@@ -33,7 +33,7 @@
       <div class="form-group">
        <tr>
          <th><%= f.label(:cmobile, "Mobile No *") %></th>
-         <td><%= f.text_field :cmobile , class: "form-control" ,:required => true,maxlength: 15,onchange: "this.setCustomValidity(validity.valueMissing ? 'Please enter a valid Mobile No.' : '');" %></td>
+         <td><%= f.text_field :cmobile , class: "form-control" , placeholder: "Enter 10 digit Mobile No." ,:required => true,maxlength: 15,onchange: "this.setCustomValidity(validity.valueMissing ? 'Please enter a valid Mobile No.' : '');" %></td>
        </tr>
       </div>
     </div>
@@ -47,6 +47,3 @@
                   <div class="help-block with-errors"></div>
                </div>
            </div>
-
-
-  
