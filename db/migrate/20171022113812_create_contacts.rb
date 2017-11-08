@@ -5,10 +5,10 @@ class CreateContacts < ActiveRecord::Migration[5.1]
 
       t.column "fname", :string , :limit => 50
       t.column "lname", :string , :limit => 50
-      t.string "description", :string ,:limit => 500 
+      t.string "description", :string ,:limit => 500
       t.date "cdate"
       t.string "cemail", :default => "", :null => false
-      t.string "cmobile",:limit => 12
+      t.string "cmobile" , :string ,:limit => 12
       t.string "cstatus"
       t.integer "cposition"
 
