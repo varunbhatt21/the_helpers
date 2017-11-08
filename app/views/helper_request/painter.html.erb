@@ -94,18 +94,16 @@
             <div class="col-md-2 ">
                     <h3>Services</h3>
                    <ul>
-            <li><a href="Electrician.html">Electrician</a></li>
-            <li><a href="Plumber.html">Plumber</a></li>
-            <li><a href="Carpenter.html">Carpenter</a></li>
-            <li><a href="Painter.html">Painter</a></li>
+                     <li>  <%= link_to("Electrician", {:action => 'electrician'}) %> </li>
+                     <li>  <%= link_to("Plumber", {:action => 'plumber'}) %> </li>
+                     <li>  <%= link_to("Carpenter", {:action => 'carpenter'}) %> </li>
+                     <li>  <%= link_to("Painter", {:action => 'painter'}) %> </li>
                     </ul>
             </div>
             <div class="col-md-2 ">
                     <h3>Go To</h3>
                     <ul>
-            <li><a href="index.html"> Home</a></li>
-            <li><a href="index.html#aboutus"> About</a></li>
-            <li><a href="index.html#contactus"> contact</a></li>
+            <li>  <%= link_to("Home", {:action => 'index'}) %> </li>
                     </ul>
             </div>
             <div class="col-md-3 colo " style="padding-right: 0px;width: 265px;">
