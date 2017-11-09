@@ -52,7 +52,10 @@ ActiveRecord::Schema.define(version: 20171022113812) do
     t.integer "helper_table_id"
     t.string "first_name", limit: 25
     t.string "last_name", limit: 50
+    t.string "company_name", limit: 50
     t.integer "position"
+    t.string "mobile", limit: 50
+    t.string "address", limit: 200
     t.float "rating", limit: 24
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -64,7 +64,7 @@ end
 private
 
   def helperlist_params
-    params.require(:helperlist).permit(:helper_table_id, :first_name, :last_name, :position, :rating, :created_at)
+    params.require(:helperlist).permit(:helper_table_id, :first_name, :last_name, :position, :rating, :company_name, :mobile,:address,:created_at)
   end
 
   def find_subject

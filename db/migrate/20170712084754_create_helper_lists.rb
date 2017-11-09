@@ -5,7 +5,10 @@ class CreateHelperLists < ActiveRecord::Migration[5.1]
       t.integer "helper_table_id"
       t.string "first_name", :limit => 25
       t.string "last_name", :limit => 50
-      t.integer "position"
+      t.string "company_name", :limit => 50
+        t.integer "position"
+      t.string "mobile", :limit => 50
+      t.string "address", :limit => 200
       t.float "rating"
       t.timestamps
     end

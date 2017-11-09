@@ -22,6 +22,18 @@
     <td><%= f.select(:rating, 0..5) %></td>
   </tr>
   <tr>
+    <th><%= f.label(:company_name, "Company Name") %></th>
+    <td><%= f.text_field(:company_name) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:mobile, "Mobile") %></th>
+    <td><%= f.text_field(:mobile) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:address, "Address") %></th>
+    <td><%= f.text_field(:address ,:size => 150) %></td>
+  </tr>
+  <tr>
     <th><%= f.label(:created_at) %></th>
     <td><%= f.datetime_select(:created_at, :order => [:month, :day, :year]) %></th>
  </tr>
