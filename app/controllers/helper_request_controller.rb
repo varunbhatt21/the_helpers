@@ -2,6 +2,7 @@ class HelperRequestController < ApplicationController
 
  layout false , only: [:electrician , :plumber , :carpenter , :painter ,:view, :show , :tandc]
 
+ impressionist :actions => [:index]
 
   def index
     @helperreq = HelperRequest.new
