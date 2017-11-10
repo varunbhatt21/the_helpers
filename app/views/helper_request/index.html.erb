@@ -52,6 +52,7 @@
                                                            <div class="modal-body"  >
 
                                                                  <%= form_for(:helperreq, :url => {:action => 'create'}) do |f| %>
+
                                                                  <%= render(:partial => "form2", :locals => {:f =>f}) %>
 
 
@@ -90,7 +91,7 @@
                <p> As per customer request, we send our employee to given address at the time customer opt.
                  Customer have to fill and submit the form or can call us if unable to proceed.
                </p>
-               <p> count is <%= @helperreq.impressionist_count(:filter=>:ip_address) %> </p>
+
          </div>
          <div class="col-ss-6 col-xs-6">
           <%=  image_tag('img1.png' ,class: "img-responsive" , style: "padding-top: 20px")  %>

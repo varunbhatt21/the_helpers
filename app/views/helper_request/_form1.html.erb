@@ -34,7 +34,9 @@
        <tr>
          <th><%= f.label(:cmobile, "Mobile No *") %></th>
          <td><%= f.text_field :cmobile , class: "form-control" , placeholder: "Enter 10 digit Mobile No." ,:required => true,maxlength: 15,onchange: "this.setCustomValidity(validity.valueMissing ? 'Please enter a valid Mobile No.' : '');" %></td>
+
        </tr>
+
       </div>
     </div>
 </div>
