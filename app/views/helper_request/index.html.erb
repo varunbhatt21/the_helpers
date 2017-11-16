@@ -28,6 +28,22 @@
              <button id="boo" class="btn btn-primary" data-toggle="modal" data-target="#policy">
                Let's Start!!
              </button>
+        <!--     <form action="https://test.payu.in/_payment" method='post' id='sub'  >
+    <input type="hidden" name="key" value="<%=@key%>">
+    <input type="hidden" name="hash" value="<%=@checksum%>">
+    <input type="hidden" name="txnid" value="TXN1234">
+    <input type="hidden" name="amount" value="200">
+    <input type="hidden" name="firstname" value="kotesh">
+    <input type="hidden" name="email" value="kotesh.rao506@gmail.com">
+    <input type="hidden" name="phone" value="9538947694">
+    <input type="hidden" name="productinfo" value="test123">
+    <input type="hidden" name="surl" value="http://localhost:3000/sucess">
+    <input type="hidden" name="furl" value="http://localhost:3000/failure">
+    <input type="hidden" name="udf1" value=<%=Time.now.strftime("%d%m%Y%H%M%S")%>">
+     <input type="submit" value="Buy" class="plan_sub btn btn-success" >
+</form>
+-->
+
              </div>
          </div>
        </div>
@@ -91,7 +107,7 @@
                <p> As per customer request, we send our employee to given address at the time customer opt.
                  Customer have to fill and submit the form or can call us if unable to proceed.
                </p>
-
+              <p> counter is <%= @counter %> </p>
          </div>
          <div class="col-ss-6 col-xs-6">
           <%=  image_tag('img1.png' ,class: "img-responsive" , style: "padding-top: 20px")  %>

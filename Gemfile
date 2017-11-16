@@ -13,10 +13,14 @@ gem 'pg'
 
 gem 'impressionist'
 
+#gem 'active_merchant_payu_in'
+
 group :development do
   gem 'mysql2', '>= 0.3.18', '< 0.5'
   # Use Puma as the app server
 end
+
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

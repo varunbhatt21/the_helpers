@@ -9,7 +9,7 @@ class CreateHelperRequests < ActiveRecord::Migration[5.1]
       t.date "date"
       t.string "helper"
       t.string "email", :default => "", :null => false
-      t.string "mobile",:limit => 12
+      t.string "mobile",:limit => 40
       t.string "time" , :limit => 50
       t.string "Status"
       t.integer "position"

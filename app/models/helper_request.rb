@@ -1,6 +1,7 @@
 class HelperRequest < ApplicationRecord
-  
-  is_impressionable
+
+  #is_impressionable
+
   include ActiveModel::Validations
   EMAIL_REGEX = /\A[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}\Z/i
   validates :name, :presence => true,
