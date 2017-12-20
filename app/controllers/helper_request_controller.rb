@@ -8,8 +8,6 @@ class HelperRequestController < ApplicationController
 
     @helperreq = HelperRequest.new
     @contactus = Contact.new
-    @counter=1
-    @counter=@counter + 1
 
   end
 
@@ -18,12 +16,6 @@ class HelperRequestController < ApplicationController
   end
 
 
-  def payumoney
-  @key = "8gfdg6XP"
-  @salt =  "tluRm9qlZ7"
-  val = "{key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5||||| @salt}"
- @checksum = Digest::SHA512.hexdigest("#{val}")
-end
 
 
   def new
