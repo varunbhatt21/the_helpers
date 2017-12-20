@@ -52,7 +52,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   ENV["GMAIL_USERNAME"] = "apnahelper"
-  ENV["GMAIL_PASSWORD"] = "vasu9598_"
+  ENV["GMAIL_PASSWORD"] = "suvar9598_"
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings ={
